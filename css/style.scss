@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .title {
+                margin: 0;
+                font-family: 'PT Serif';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 48px;
+                letter-spacing: -0.045em;
+                color: #000000;
+                padding-top: 30px;
+                min-width: 40%;
+            }
+            .about {
+                min-width: 40%;
+                h2 {
+                    margin: 0;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 27px;
+                    text-transform: uppercase;
+                    color: #000000;
+                    padding-top: 30px;
+                }
+                p {
+                    margin: 0;
+                    font-family: 'Poppins';
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #000000;
+                    padding-top: 20px;
+                    max-width: 50%;
+                }
+            }
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+                .card {
+                    display: flex;
+                    position: relative;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-right: 20px;
+                    .name {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #000000;
+                    }
+                    .role {
+                        font-family: 'PT Serif';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        text-transform: uppercase;
+                        color: #000000;
+                        writing-mode: vertical-rl;
+                        position: absolute;
+                        right: -5%;
+                        top: 20%;
+                    }
+                    &-down {
+                        margin-top: 350px;
+                    }
+                }
+        }
+    }
+}
+
+@media screen and (max-width: 1780px){
+    .container {
+        width: 1000px;
+        height: 100%;
+    }
+    .card-down {
+        margin-top: 0 !important;
+    }
+    .card-mobile {
+        margin-top: 400px !important;
+    }
+}
+@media screen and (max-width: 1230px){
+    .container {
+        width: 90%;
+        header {
+            .about {
+                width: 100% !important;
+            }
+        }
+        .gallery {
+            flex-direction: column;
+            align-items: center;
+            .card {
+                padding-top: 60px;
+            }
+            .card-down {
+                margin-top: 0 !important;
+            } 
+            .card-mobile {
+                margin-top: 0 !important;
+            }
+        }
+    }
+}
